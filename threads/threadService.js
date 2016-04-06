@@ -1,3 +1,4 @@
+/* global Firebase */
 angular.module("rtfmApp").service("threadService", function(fb) {
 	this.getThreads = function() {
 		return new Firebase(fb.url + "/threads");
